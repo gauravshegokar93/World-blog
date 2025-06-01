@@ -106,6 +106,6 @@ This project is open-source under the [MIT License](LICENSE).
 
 ## 🙋‍♂️ Maintainer
 
-Built with ❤️ by [Your Name](https://github.com/your-username)
+Built with ❤️ by [Gaurav](https://github.com/gauravshegokar93)
 
 ---
