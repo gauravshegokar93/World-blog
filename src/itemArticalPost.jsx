@@ -1,9 +1,10 @@
 export default function ItemContainer({info, itemType}) {
-    let ContainerStyle = {
-        height : "auto",
-        width : "400px",
-        padding : "30px"
-    }
+    // let ContainerStyle = {
+    //     height : "auto",
+    //     width : "400px",
+    //     padding : "30px",
+    //     backgroundColor: 'white'
+    // }
 
     if(itemType == 2){
         ContainerStyle.width = "264px";
@@ -13,7 +14,7 @@ export default function ItemContainer({info, itemType}) {
 
     return (
         <>
-            <div className="itemContainer" style={ContainerStyle}>
+            <div className="itemContainer w-[400px] p-8 bg-white shadow">
                 <div className="meta inline-flex items-center text-white bg-blue-500 px-2 rounded mb-[15px] text-sm h-[25px font-semibold]">
                     {info.meta}
                 </div>
@@ -26,12 +27,13 @@ export default function ItemContainer({info, itemType}) {
                     className="postImage relative overflow-hidden h-[322.533px] mb-[15px]"
                     style={{width: "calc(100% + 60px)", marginLeft: "-30px", }}
                 >
-                    <a href="#"></a>
+                    <a href="#">
                     <img
                         src={info.imageURL}
                         alt="PostImage"
                         className="w-full h-[322.533px] object-cover"
                     />
+                    </a>
                 </div>
 
 
