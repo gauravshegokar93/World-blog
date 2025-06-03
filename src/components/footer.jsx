@@ -93,7 +93,7 @@ export default function Footer() {
       {/* Center Title */}
       <div className="text-center mb-6">
         <h2 className="text-white text-3xl font-serif font-bold">Daily News</h2>
-        <p className="text-gray-500 text-sm mt-1">All voices matter <p className = "text-black">except black</p></p>
+        <p className="text-gray-500 text-sm mt-1">All voices matter </p>
       </div>
 
       {/* Divider */}
