@@ -97,13 +97,16 @@ function QuoteCard() {
                         &ldquo;
                     </span>
                     <span className="relative z-10">
-                        Discere veritus detraxit pri ut, sea ei dicunt theophrastus. Eum harum animal debitis cu
+             We began with just two interns and a vision.
+Not money or answers, but belief made us start.
+
+
                     </span>
                 </p>
 
                 <div className="pt-6">
                     <p className="text-lg font-medium opacity-90">
-                        Melissa Peterson
+                        Render Lab Solution
                     </p>
                 </div>
             </div>

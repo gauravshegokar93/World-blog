@@ -92,8 +92,8 @@ export default function Footer() {
 
       {/* Center Title */}
       <div className="text-center mb-6">
-        <h2 className="text-white text-3xl font-serif font-bold">Daily News</h2>
-        <p className="text-gray-500 text-sm mt-1">All voices matter <p className = "text-black">except black</p></p>
+        <h2 className="text-white text-3xl font-serif font-bold">Tranding Blogs</h2>
+        <p className="text-gray-500 text-sm mt-1">Render Lab Solution <p className = "text-black">except black</p></p>
       </div>
 
       {/* Divider */}
@@ -101,7 +101,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <p className="text-center text-gray-600 text-xs">
-        Copyright © 2025 - WordPress Theme by CreativeThemes
+        Copyright © 2025 - Render Lab Solution
       </p>
     </footer>
   );
