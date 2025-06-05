@@ -1,0 +1,24 @@
+{
+    "hellowImgURL" : "https://images.unsplash.com/photo-1542382156909-9ae37b3f56fd?q=80&w=2143&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "heading" : "Say Hello!",
+    "headingDescription" : "Our staff would love to hear from you",
+
+
+    "introduction" : "Our Team is at your complete disposal for any questions",
+    "introductionDescription" : "Sed libero enim sed faucibus turpis in suspendisse potenti nullam ac tortor vitae purus faucibus ornare.",
+
+
+    "physicalAddressLogoURL" : "/location.svg",
+    "physicalAddress" : "304 North Cardinal St. Dorchester Center, MA 02124",
+
+    "emailAddressLogoURL" : "/mail.svg",
+    "emailAddresses" : ["info@company.com", "contact@company.com"],
+
+    "phoneNumbersLogoURL" : "/phone.svg",
+    "phoneNumbers" : ["1-555-123-4567", "1-800-123-4567"],
+
+
+    "messageBoxImageURL" : "https://images.unsplash.com/photo-1567094456450-d43166812088?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "messageBoxHeading" : "We are here to help",
+    "messageBoxDescription" : "Need some help? Fill out the form below and our staff will be in touch!"
+}
