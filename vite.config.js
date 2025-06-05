@@ -8,4 +8,13 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  server: {
+    proxy: {
+      "/api/finnhub": {
+        target: "https://finnhub.io",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/finnhub/, ""),
+      },
+    },
+  },
 })
