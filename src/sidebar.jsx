@@ -3,7 +3,7 @@ import { FaSearch } from "react-icons/fa";
 import axios from "axios";
 import placeholderImage from './assets/placeholder-news.jpg'; // Placeholder image for news items
 
-// SearchBox Component (unchanged)
+// SearchBox Component 
 function SearchBox() {
   return (
     <>
@@ -93,7 +93,7 @@ function FinancialNews() {
 );
 }
 
-// Categories Component (unchanged)
+// Categories Component 
 function Categories() {
   const categories = ["Art & Design", "Nature", "People", "Travel", "Trends"];
   const categorieLinks = {
@@ -120,7 +120,7 @@ function Categories() {
   );
 }
 
-// QuoteCard Component (unchanged)
+// QuoteCard Component 
 function QuoteCard() {
   return (
     <div className="bg-blue-500 rounded-2xl p-12 w-full shadow-2xl h-[456px] font-serif text-lg text-gray-800">
