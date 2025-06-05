@@ -119,7 +119,6 @@ function Categories() {
     </div>
   );
 }
-
 // QuoteCard Component 
 function QuoteCard() {
   return (
@@ -127,14 +126,19 @@ function QuoteCard() {
       <div className="text-white relative">
         <p className="text-2xl md:text-3xl font-light leading-relaxed mb-8 relative z-10">
           <span className="absolute -top-8 -left-4 text-8xl text-white/10 font-serif z-0 select-none">
-            “
+            &ldquo;
           </span>
           <span className="relative z-10">
-            Discere veritus detraxit pri ut, sea ei dicunt theophrastus. Eum harum animal debitis cu
+            We began with just two interns and a vision. <br />
+            Not money or answers, but belief made us start. <br />
+            <br />
+            Discere veritus detraxit pri ut, sea ei dicunt theophrastus. Eum harum animal debitis cu.
           </span>
         </p>
         <div className="pt-6">
-          <p className="text-lg font-medium opacity-90">Melissa Peterson</p>
+          <p className="text-lg font-medium opacity-90">
+            Render Lab Solution & Melissa Peterson
+          </p>
         </div>
       </div>
     </div>
