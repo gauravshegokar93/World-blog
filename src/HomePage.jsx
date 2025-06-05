@@ -1,5 +1,59 @@
+import articalData from "./data/testingInfo.json";
 import {FaSearch} from "react-icons/fa";
-import postData from "./testingPostInfo.json";
+import postData from "./data/testingPostInfo.json";
+
+
+// Item Container :
+
+function ItemContainer({info}) {
+    return (
+        <>
+            <div className="itemContainer w-[400px] p-8 bg-white shadow">
+                <div className="meta inline-flex items-center text-white bg-blue-500 px-2 rounded mb-[15px] text-sm h-[25px font-semibold]">
+                    {info.meta}
+                </div>
+
+                <a href={info.URL}>
+
+                    <div className="title font-bold mb-[15px] text-[18px]">
+                        {info.title}
+                    </div>
+
+                    <div 
+                        className="postImage relative overflow-hidden h-[322.533px] mb-[15px]"
+                        style={{width: "calc(100% + 60px)", marginLeft: "-30px", }}
+                    >
+                        <img
+                            src={info.imageURL}
+                            alt="PostImage"
+                            className="w-full h-[322.533px] object-cover"
+                        />
+                    </div>
+
+                    <div className="shortDiscription font-light mb-[15px]">
+                        {info.shortDescription}
+                    </div>
+
+                </a>
+
+                <div className="info text-[12px]">
+                    <p className="author inline">
+                        {info.author}
+                    </p>
+                    <span className="mx-2">/</span>
+                    <p className="uploadDate inline">
+                        {info.uploadDate}
+                    </p>
+                </div>
+
+            </div>
+            
+        </>
+    )
+}
+
+
+// Side Bar :
 
 function SearchBox(){
     return (
@@ -41,14 +95,9 @@ function PostList(){
     return(
         <>
             <h2 className="font-bold text-base text-slate-900 mb-2">Posts</h2>
-            <Post info={postData[0]} />
-            <Post info={postData[0]} />
-            <Post info={postData[0]} />
-            <Post info={postData[0]} />
-            <Post info={postData[0]} />
-            <Post info={postData[0]} />
-            <Post info={postData[0]} />
-
+            {postData.map((data, index) => (
+                <Post info={data} key={index}/>
+            ))}
         </>
     );
 }
@@ -112,7 +161,7 @@ function QuoteCard() {
 }
 
 
-export default function SideBar() {
+function SideBar() {
     return (
         <div className="w-[349px] flex flex-col gap-y-6">
             <SearchBox />
@@ -122,3 +171,38 @@ export default function SideBar() {
         </div>
     )
 };
+
+
+// Home Page Component :
+
+function ArticalList(){
+    return(
+        <div className="grid gap-6 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
+            {articalData.map((data) => (
+                <ItemContainer
+                    key={data.id}
+                    info={data}
+                />
+            ))}
+        </div>
+    )
+}
+
+export default function HomePage(){
+    return(
+        <>
+            <div className="flex justify-center bg-[#f5f5f5]">
+                <div className="flex flex-row w-[1290px] gap-6 px-6">
+                    <div className="flex-1 max-w-[900px]">
+                        <ArticalList />
+                    </div>
+
+                    <div className="w-[300px] shrink-0 sticky top-6 h-fit">
+                        <SideBar />
+                    </div>
+
+                </div>
+            </div>
+        </>
+    )
+}
