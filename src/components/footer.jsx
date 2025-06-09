@@ -90,7 +90,7 @@ export default function Footer() {
       {/* Divider */}
       <hr className="border-gray-700 mb-6" />
 
-      {/* Center Title */}
+     {/* Center Title */}
 <div className="text-center mb-6">
   <h2 className="text-white text-3xl font-serif font-bold">Tranding Blogs / Daily News</h2>
   <p className="text-gray-500 text-sm mt-1">

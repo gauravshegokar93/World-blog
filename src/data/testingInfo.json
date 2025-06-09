@@ -6,7 +6,8 @@
     "imageURL": "https://images.unsplash.com/photo-1748199625285-622076001599?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
     "shortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, a!",
     "author": "JOHN DOE",
-    "uploadDate": "JANUARY 28, 2020"
+    "uploadDate": "JANUARY 28, 2020",
+    "URL" : "#"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "imageURL": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
     "shortDescription": "Create blazing fast web applications with modern tools.",
     "author": "JANE SMITH",
-    "uploadDate": "FEBRUARY 10, 2020"
+    "uploadDate": "FEBRUARY 10, 2020",
+    "URL" : "#"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "imageURL": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
     "shortDescription": "How utility-first CSS frameworks are changing the design game.",
     "author": "ALAN TURING",
-    "uploadDate": "MARCH 15, 2020"
+    "uploadDate": "MARCH 15, 2020",
+    "URL" : "#"
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "imageURL": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
     "shortDescription": "An unforgettable journey into the heart of South America.",
     "author": "EMILY STONE",
-    "uploadDate": "APRIL 2, 2020"
+    "uploadDate": "APRIL 2, 2020",
+    "URL" : "#"
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "imageURL": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
     "shortDescription": "Why less is often more in modern design aesthetics.",
     "author": "LEO NGUYEN",
-    "uploadDate": "MAY 19, 2020"
+    "uploadDate": "MAY 19, 2020",
+    "URL" : "#"
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "imageURL": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
     "shortDescription": "Meet the creators powering the digital revolution.",
     "author": "SOPHIA KIM",
-    "uploadDate": "JUNE 10, 2020"
+    "uploadDate": "JUNE 10, 2020",
+    "URL" : "#"
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "imageURL": "https://images.unsplash.com/photo-1581090700227-1e37b190418e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
     "shortDescription": "Stay ahead of search engine changes with this expert guide.",
     "author": "MARK ZANE",
-    "uploadDate": "JULY 5, 2020"
+    "uploadDate": "JULY 5, 2020",
+    "URL" : "#"
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "imageURL": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
     "shortDescription": "Deep dive into JavaScript ES6+ features.",
     "author": "JESSICA RAY",
-    "uploadDate": "AUGUST 11, 2020"
+    "uploadDate": "AUGUST 11, 2020",
+    "URL" : "#"
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "imageURL": "https://images.unsplash.com/photo-1497215842964-222b430dc094?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
     "shortDescription": "Capture the world better with these simple tips.",
     "author": "JACK TURNER",
-    "uploadDate": "SEPTEMBER 1, 2020"
+    "uploadDate": "SEPTEMBER 1, 2020",
+    "URL" : "#"
   },
   {
     "id": 10,
@@ -87,7 +96,8 @@
     "imageURL": "https://images.unsplash.com/photo-1504386106331-3e4e71712b38?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
     "shortDescription": "Essential tools and practices for efficient remote work.",
     "author": "AMY LIN",
-    "uploadDate": "OCTOBER 20, 2020"
+    "uploadDate": "OCTOBER 20, 2020",
+    "URL" : "#"
   },
   {
     "id": 11,
@@ -96,7 +106,8 @@
     "imageURL": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
     "shortDescription": "Balancing screen time and well-being in a connected world.",
     "author": "DAVID CHANG",
-    "uploadDate": "NOVEMBER 15, 2020"
+    "uploadDate": "NOVEMBER 15, 2020",
+    "URL" : "#"
   },
   {
     "id": 15,
@@ -105,6 +116,7 @@
     "imageURL": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
     "shortDescription": "Balancing screen time and well-being in a connected world.",
     "author": "DAVID CHANG",
-    "uploadDate": "NOVEMBER 15, 2020"
+    "uploadDate": "NOVEMBER 15, 2020",
+    "URL" : "#"
   }
 ]
