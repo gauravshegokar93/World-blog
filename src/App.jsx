@@ -1,25 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/nav.jsx";
 import Footer from "./components/footer.jsx";
 import HomePage from "./HomePage.jsx";
-
 import ContactPage from "./ContactPage.jsx";
-import contactData from "./data/testingContactPageData.json"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-
-
-
-import ItemContainer from "./itemArticalPost.jsx";
-import Sidebar from "./sidebar.jsx";
-import thedate from "./testingInfo.json";
-import MainArea from "./mainArea.jsx";
-
+import contactData from "./data/testingContactPageData.json";
 
 function App() {
   return (
+    <Router>
       <Routes>
         <Route
-          path="/" 
+          path="/"
           element={
             <>
               <Navbar />
@@ -28,20 +19,22 @@ function App() {
               <br />
               <Footer />
             </>
-        } />
-
+          }
+        />
         <Route
           path="/contact"
           element={
             <>
               <Navbar />
               <br />
-              <ContactPage contactPageInfo={contactData}/>
+              <ContactPage contactPageInfo={contactData} />
               <br />
               <Footer />
             </>
-        } />
+          }
+        />
       </Routes>
+    </Router>
   );
 }
 
