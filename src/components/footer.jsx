@@ -90,19 +90,22 @@ export default function Footer() {
       {/* Divider */}
       <hr className="border-gray-700 mb-6" />
 
-      {/* Center Title */}
-      <div className="text-center mb-6">
-        <h2 className="text-white text-3xl font-serif font-bold">Daily News</h2>
-        <p className="text-gray-500 text-sm mt-1">All voices matter</p>
-      </div>
+     {/* Center Title */}
+<div className="text-center mb-6">
+  <h2 className="text-white text-3xl font-serif font-bold">Tranding Blogs / Daily News</h2>
+  <p className="text-gray-500 text-sm mt-1">
+    Render Lab Solution — All voices matter. <span className="text-black">except black</span>
+  </p>
+</div>
 
-      {/* Divider */}
-      <hr className="border-gray-700 mb-6" />
+{/* Divider */}
+<hr className="border-gray-700 mb-6" />
 
-      {/* Copyright */}
-      <p className="text-center text-gray-600 text-xs">
-        Copyright © 2025 - WordPress Theme by CreativeThemes
-      </p>
+{/* Copyright */}
+<p className="text-center text-gray-600 text-xs">
+  Copyright © 2025 - Render Lab Solution
+</p>
+
     </footer>
   );
 }
