@@ -1,6 +1,20 @@
 import { FaSearch, FaFire } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+
 
 export default function Navbar() {
+  const ListItems = {
+    "Home": "/",
+    "Culture": "/culture",
+    "Economy": "/economy",
+    "Politics": "/politics",
+    "Science": "/science",
+    "Technology": "/technology",
+    "Travel": "/travel",
+    "Gaming": "/gaming",
+    "Contact": "/contact"
+  };
+
   return (
     <div className="bg-black text-white pt-4 px-6">
       {/* Top bar with logo left and Contribute button right */}
@@ -27,23 +41,14 @@ export default function Navbar() {
         <div className="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between">
           {/* Menu Items */}
           <ul className="flex space-x-6">
-            {[
-              "Home",
-              "Culture",
-              "Economy",
-              "Politics",
-              "Science",
-              "Technology",
-              "Travel",
-              "Gaming",
-            ].map((item) => (
+            {Object.entries(ListItems).map(([item, itemURL]) => (
               <li key={item}>
-                <a
-                  href="#"
+                <Link 
+                  to={itemURL}
                   className="uppercase font-semibold text-sm hover:text-blue-500 hover:border-b-2 hover:border-blue-500 pb-1"
                 >
                   {item}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
