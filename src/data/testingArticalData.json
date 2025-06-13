@@ -1,8 +1,17 @@
 {
-    "heading" : "Scelerisque Indictum Non Consectetur Aerat Namin Turpis",
-    "author" : "JOHN DOE",
+    "id" : 1234,
+    "HeadLine" : "How a design change is leading to 7x more email subscribers across Medium",
+    "Discription" : "More consistent access to your readership through emails",
+
+    "author" : {
+        "name":"JOHN DOE",
+        "profilePicURL" : "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+
     "uploadData" : "JANUARY 28, 2020",
     "meta" : "TRENDS",
+    "tags" : ["Trending", "City", "Jobs", "NewYork", "Internet"],
+    "headImageURL" : "https://images.unsplash.com/photo-1749154362898-860b54bdf363?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
     "paragraphs" : [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In ante metus dictum at tempor commodo ullamcorper. Amet tellus cras adipiscing enim eu. Sagittis orci a scelerisque purus semper eget duis. Non diam phasellus vestibulum lorem sed risus. Ut morbi tincidunt augue interdum velit euismod. In eu mi bibendum neque egestas congue quisque egestas. Ac placerat vestibulum lectus mauris ultrices eros in. Orci a scelerisque purus semper eget duis at tellus at. Eget felis eget nunc lobortis. Est ullamcorper eget nulla facilisi. Aliquam sem et tortor consequat id. Vitae nunc sed velit dignissim sodales. Scelerisque felis imperdiet proin fermentum leo vel orci porta non. Neque sodales ut etiam sit amet nisl purus in mollis. Est sit amet facilisis magna etiam tempor orci. Risus pretium quam vulputate dignissim suspendisse in est. Et magnis dis parturient montes nascetur. Lobortis mattis aliquam faucibus purus in massa. Malesuada fames ac turpis egestas maecenas pharetra convallis.",

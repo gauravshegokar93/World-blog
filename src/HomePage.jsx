@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
-import { FaSearch } from "react-icons/fa";
-import axios from "axios";
-import articalData from "./data/testingInfo.json";
+import articals from "./data/articals.json";
 import postData from "./data/testingPostInfo.json";
+import { FaSearch } from "react-icons/fa";
+import { useState, useEffect } from "react";
 import placeholderImage from './assets/placeholder-news.jpg';
+import axios from "axios";
 
-// Item Container :
+// Item Container
 function ItemContainer({ info }) {
   return (
     <div className="itemContainer w-[400px] p-8 bg-white shadow">
@@ -13,31 +13,48 @@ function ItemContainer({ info }) {
         {info.meta}
       </div>
 
-      <a href={info.URL}>
-        <div className="title font-bold mb-[15px] text-[18px]">{info.title}</div>
+      <a href={`/artical/${info.id}`}>
+        <div className="title font-bold mb-[15px] text-[18px]">{info.HeadLine}</div>
         <div
           className="postImage relative overflow-hidden h-[322.533px] mb-[15px]"
           style={{ width: "calc(100% + 60px)", marginLeft: "-30px" }}
         >
           <img
-            src={info.imageURL}
+            src={info.headImageURL}
             alt="PostImage"
             className="w-full h-[322.533px] object-cover"
           />
         </div>
-        <div className="shortDiscription font-light mb-[15px]">{info.shortDescription}</div>
+        <div className="shortDiscription font-light mb-[15px]">{info.Discription}</div>
       </a>
 
       <div className="info text-[12px]">
-        <p className="author inline">{info.author}</p>
+        <p className="author inline">{info.author.name}</p>
         <span className="mx-2">/</span>
-        <p className="uploadDate inline">{info.uploadDate}</p>
+        <p className="uploadDate inline">{info.uploadData}</p>
       </div>
     </div>
   );
 }
 
-// SearchBox Component 
+// Artical List
+function ArticalList({ articalTypes = "all" }) {
+  let theArticals = articals;
+
+  if (articalTypes !== "all") {
+    theArticals = theArticals.filter((data) => data.meta === articalTypes);
+  }
+
+  return (
+    <div className="grid gap-6 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
+      {theArticals.map((data) => (
+        <ItemContainer key={data.id} info={data} />
+      ))}
+    </div>
+  );
+}
+
+// Sidebar Components
 function SearchBox() {
   return (
     <>
@@ -54,7 +71,6 @@ function SearchBox() {
   );
 }
 
-// Post Component
 function Post({ info }) {
   return (
     <a href={info.url} className="flex gap-3 mb-4 group" target="_self">
@@ -84,7 +100,6 @@ function PostList() {
   );
 }
 
-// Financial News Component
 function FinancialNews() {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -147,7 +162,6 @@ function FinancialNews() {
   );
 }
 
-// Categories Component 
 function Categories() {
   const categories = ["Art & Design", "Nature", "People", "Travel", "Trends"];
   const categorieLinks = {
@@ -174,7 +188,6 @@ function Categories() {
   );
 }
 
-// QuoteCard Component 
 function QuoteCard() {
   return (
     <div className="bg-blue-500 rounded-2xl p-12 w-full shadow-2xl h-[456px] font-serif text-lg text-gray-800">
@@ -200,7 +213,7 @@ function QuoteCard() {
   );
 }
 
-// Combined Sidebar
+// SideBar Combiner
 function SideBar() {
   return (
     <div className="w-[349px] flex flex-col gap-y-6">
@@ -213,23 +226,13 @@ function SideBar() {
   );
 }
 
-// Home Page Component
-function ArticalList() {
+// ✅ Final Exported HomePage Component
+export default function HomePage({ articalTypes = "all" }) {
   return (
-    <div className="grid gap-6 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
-      {articalData.map((data) => (
-        <ItemContainer key={data.id} info={data} />
-      ))}
-    </div>
-  );
-}
-
-export default function HomePage() {
-  return (
-    <div className="flex justify-center bg-[#f5f5f5]">
+    <div className="flex justify-center bg-[#f5f5f5] py-9">
       <div className="flex flex-row w-[1290px] gap-6 px-6">
         <div className="flex-1 max-w-[900px]">
-          <ArticalList />
+          <ArticalList articalTypes={articalTypes} />
         </div>
         <div className="w-[300px] shrink-0 sticky top-6 h-fit">
           <SideBar />

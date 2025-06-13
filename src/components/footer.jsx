@@ -1,4 +1,18 @@
+import { Link } from 'react-router-dom';
+
 export default function Footer() {
+  const ListItems = {
+    "Home": "/",
+    "Culture": "/culture",
+    "Economy": "/economy",
+    "Politics": "/politics",
+    "Science": "/science",
+    "Technology": "/technology",
+    "Travel": "/travel",
+    "Gaming": "/gaming",
+    "Contact": "/contact"
+  };
+
   return (
     <footer className="bg-black text-gray-400 pt-12 pb-6 px-6 select-none">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
@@ -37,10 +51,15 @@ export default function Footer() {
         {/* Categories */}
         <div>
           <h3 className="text-white font-semibold mb-3">Categories</h3>
-          <ul className="space-y-1">
-            {["Culture", "Economy", "Politics", "Science", "Technology", "Travel", "World"].map((cat) => (
-              <li key={cat} className="hover:text-white cursor-pointer transition">
-                {cat}
+          <ul className="flex flex-col space-x-6">
+            {Object.entries(ListItems).map(([item, itemURL]) => (
+              <li key={item}>
+                <Link 
+                  to={itemURL}
+                  className="font-semibold text-sm hover:text-blue-500 hover:border-b-2 hover:border-blue-500 pb-1"
+                >
+                  {item}
+                </Link>
               </li>
             ))}
           </ul>
