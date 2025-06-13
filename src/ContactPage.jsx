@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 
 export default function ContactPage({ contactPageInfo }) {
     return (
-        <div className="pb-[60px]">
+        <div className="pb-[60px] py-9">
             <div
                 id="hello"
                 className="relative w-full h-[430px] bg-cover bg-center flex items-center justify-center text-center"

@@ -1,7 +1,7 @@
 import articalData from "./data/testingInfo.json";
+import articals from "./data/articals.json";
 import {FaSearch} from "react-icons/fa";
 import postData from "./data/testingPostInfo.json";
-
 
 // Item Container :
 
@@ -13,10 +13,11 @@ function ItemContainer({info}) {
                     {info.meta}
                 </div>
 
-                <a href={info.URL}>
+                {/* <a href={info.URL}> */}
+                <a href={`/artical/${info.id}`}>
 
                     <div className="title font-bold mb-[15px] text-[18px]">
-                        {info.title}
+                        {info.HeadLine}
                     </div>
 
                     <div 
@@ -24,25 +25,25 @@ function ItemContainer({info}) {
                         style={{width: "calc(100% + 60px)", marginLeft: "-30px", }}
                     >
                         <img
-                            src={info.imageURL}
+                            src={info.headImageURL}
                             alt="PostImage"
                             className="w-full h-[322.533px] object-cover"
                         />
                     </div>
 
                     <div className="shortDiscription font-light mb-[15px]">
-                        {info.shortDescription}
+                        {info.Discription}
                     </div>
 
                 </a>
 
                 <div className="info text-[12px]">
                     <p className="author inline">
-                        {info.author}
+                        {info.author.name}
                     </p>
                     <span className="mx-2">/</span>
                     <p className="uploadDate inline">
-                        {info.uploadDate}
+                        {info.uploadData}
                     </p>
                 </div>
 
@@ -178,12 +179,16 @@ function SideBar() {
 function ArticalList(){
     return(
         <div className="grid gap-6 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
-            {articalData.map((data) => (
+            {articals.map((data) => (
                 <ItemContainer
                     key={data.id}
                     info={data}
                 />
             ))}
+
+
+            
+
         </div>
     )
 }
@@ -191,7 +196,7 @@ function ArticalList(){
 export default function HomePage(){
     return(
         <>
-            <div className="flex justify-center bg-[#f5f5f5]">
+            <div className="flex justify-center bg-[#f5f5f5] py-9">
                 <div className="flex flex-row w-[1290px] gap-6 px-6">
                     <div className="flex-1 max-w-[900px]">
                         <ArticalList />
