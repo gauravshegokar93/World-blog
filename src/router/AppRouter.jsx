@@ -1,17 +1,17 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Navbar from "./components/nav.jsx";
-import Footer from "./components/footer.jsx";
-import HomePage from "./HomePage.jsx";
+import Navbar from "../components/nav.jsx";
+import Footer from "../components/footer.jsx";
+import HomePage from "../HomePage.jsx";
 
-import ContactPage from "./ContactPage.jsx";
-import contactData from "./data/testingContactPageData.json";
+import ContactPage from "../ContactPage.jsx";
+import contactData from "../data/testingContactPageData.json";
 
-import ArticalData from "./data/testingArticalData.json";
-import ArticalPost from "./ArticalPost.jsx";
+import ArticalData from "../data/testingArticalData.json";
+import ArticalPost from "../ArticalPost.jsx";
 
-import articals from "./data/articals.json";
+import articals from "../data/articals.json";
 
 
 
