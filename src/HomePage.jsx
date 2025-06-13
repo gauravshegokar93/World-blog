@@ -1,7 +1,7 @@
-import articalData from "./data/testingInfo.json";
 import articals from "./data/articals.json";
 import {FaSearch} from "react-icons/fa";
 import postData from "./data/testingPostInfo.json";
+import { useParams } from 'react-router-dom';
 
 // Item Container :
 
@@ -176,30 +176,31 @@ function SideBar() {
 
 // Home Page Component :
 
-function ArticalList(){
+function ArticalList({articalTypes}){
+    let theArticals = articals;
+
+    if(articalTypes != "all")
+        theArticals = theArticals.filter(data => data.meta === articalTypes);
+
     return(
         <div className="grid gap-6 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
-            {articals.map((data) => (
+            {theArticals.map((data) => (
                 <ItemContainer
                     key={data.id}
                     info={data}
                 />
             ))}
-
-
-            
-
         </div>
     )
 }
 
-export default function HomePage(){
+export default function HomePage({articalTypes = "all"}){
     return(
         <>
             <div className="flex justify-center bg-[#f5f5f5] py-9">
                 <div className="flex flex-row w-[1290px] gap-6 px-6">
                     <div className="flex-1 max-w-[900px]">
-                        <ArticalList />
+                        <ArticalList articalTypes={articalTypes}/>
                     </div>
 
                     <div className="w-[300px] shrink-0 sticky top-6 h-fit">

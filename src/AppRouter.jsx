@@ -40,6 +40,7 @@ export default function AppRouter(){
                 element={
                     <>
                     <Navbar />
+                    <HomePage articalTypes='CULTURE'/>
                     <Footer />
                     </>
             } />
@@ -48,6 +49,7 @@ export default function AppRouter(){
                 element={
                     <>
                     <Navbar />
+                    <HomePage articalTypes='ECONOMY'/>
                     <Footer />
                     </>
             } />
@@ -56,6 +58,7 @@ export default function AppRouter(){
                 element={
                     <>
                     <Navbar />
+                    <HomePage articalTypes='POLITICS'/>
                     <Footer />
                     </>
             } />
@@ -64,6 +67,7 @@ export default function AppRouter(){
                 element={
                     <>
                     <Navbar />
+                    <HomePage articalTypes='SCIENCE'/>
                     <Footer />
                     </>
             } />
@@ -72,6 +76,7 @@ export default function AppRouter(){
                 element={
                     <>
                     <Navbar />
+                    <HomePage articalTypes='TECHNOLOGY'/>
                     <Footer />
                     </>
             } />
@@ -80,6 +85,7 @@ export default function AppRouter(){
                 element={
                     <>
                     <Navbar />
+                    <HomePage articalTypes='TRAVEL'/>
                     <Footer />
                     </>
             } />
@@ -88,6 +94,7 @@ export default function AppRouter(){
                 element={
                     <>
                     <Navbar />
+                    <HomePage articalTypes='GAMING'/>
                     <Footer />
                     </>
             } />
