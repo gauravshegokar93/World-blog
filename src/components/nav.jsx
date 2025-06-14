@@ -2,6 +2,7 @@ import { FaSearch, FaFire } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 
+
 export default function Navbar() {
   const ListItems = {
     "Home": "/",
@@ -12,7 +13,10 @@ export default function Navbar() {
     "Technology": "/technology",
     "Travel": "/travel",
     "Gaming": "/gaming",
-    "Contact": "/contact"
+    "Contact": "/contact",
+    "About": "/about"
+
+
   };
 
   return (
