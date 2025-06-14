@@ -5,7 +5,7 @@ import Navbar from "../components/nav.jsx";
 import Footer from "../components/footer.jsx";
 import HomePage from "../HomePage.jsx";
 import ContactPage from "../ContactPage.jsx";
-import About from "../components/About.jsx";
+import About from "../components/about.jsx";
 import ArticalPost from "../ArticalPost.jsx";
 import contactData from "../data/testingContactPageData.json";  
 
@@ -24,7 +24,6 @@ export default function AppRouter() {
   return (
     <Routes>
       <Route path="/" element={<><Navbar /><HomePage /><Footer /></>} />
-      <Route path = "/about" element={ <About />} />
       <Route path="/contact" element={<><Navbar /><ContactPage contactPageInfo={contactData} /><Footer /></>} />
       <Route path="/culture" element={<><Navbar /><HomePage articalTypes="CULTURE" /><Footer /></>} />
       <Route path="/economy" element={<><Navbar /><HomePage articalTypes="ECONOMY" /><Footer /></>} />
@@ -42,7 +41,7 @@ export default function AppRouter() {
       <Route path="/location" element={<><Navbar /><Location /><Footer /></>} />
       <Route path="/faq" element={<><Navbar /><FAQ /><Footer /></>} />
       <Route path="/advertise" element={<><Navbar /><Advertise /><Footer /></>} />
-      <Route path="/About" element={<><Navbar /><About /><Footer /></>} />
+      <Route path="/about" element={<><Navbar /><About /><Footer /></>} />
       <Route path="/subscription" element={<><Navbar /><Subscription /><Footer /></>} />
       
       
