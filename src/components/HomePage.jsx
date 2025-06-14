@@ -1,8 +1,8 @@
-import articals from "./data/articals.json";
-import postData from "./data/testingPostInfo.json";
+import articals from "../data/articals.json";
+import postData from "../data/testingPostInfo.json";
 import { FaSearch } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import placeholderImage from './assets/placeholder-news.jpg';
+import placeholderImage from '../assets/placeholder-news.jpg';
 import axios from "axios";
 
 // Item Container
