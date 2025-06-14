@@ -200,16 +200,13 @@ function QuoteCard() {
             We began with just two interns and a vision. <br />
             Not money or answers, but belief made us start. <br />
             <br />
-            Discere veritus detraxit pri ut, sea ei dicunt theophrastus. Eum harum animal debitis cu.
+            
           </span>
         </p>
-        <div className="pt-6">
-          <p className="text-lg font-medium opacity-90">
-            Render Lab Solution & Melissa Peterson
-          </p>
+      
         </div>
       </div>
-    </div>
+  
   );
 }
 

@@ -10,7 +10,6 @@ export default function Footer() {
     "Technology": "/technology",
     "Travel": "/travel",
     "Gaming": "/gaming",
-    "Contact": "/contact"
   };
 
   return (
@@ -75,8 +74,6 @@ export default function Footer() {
               "Site Map",
               "FAQ",
               "Locations",
-              "Breaking News",
-              "User Area",
             ].map((info) => (
               <li key={info} className="hover:text-white cursor-pointer transition">
                 {info}
@@ -96,7 +93,6 @@ export default function Footer() {
               "Help Center",
               "Advertise",
               "Subscription",
-              "Startups",
             ].map((comp) => (
               <li key={comp} className="hover:text-white cursor-pointer transition">
                 {comp}
@@ -111,7 +107,7 @@ export default function Footer() {
 
      {/* Center Title */}
 <div className="text-center mb-6">
-  <h2 className="text-white text-3xl font-serif font-bold">Tranding Blogs / Daily News</h2>
+  <h2 className="text-white text-3xl font-serif font-bold">Daily News</h2>
   <p className="text-gray-500 text-sm mt-1">
     Render Lab Solution — All voices matter. <span className="text-black">except black</span>
   </p>
