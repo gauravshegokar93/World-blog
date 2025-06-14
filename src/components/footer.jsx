@@ -38,7 +38,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-black text-gray-400 pt-12 pb-6 px-6 select-none">
+    <footer className="bg-black text-gray-400 pt-12 pb-6 px-6 select-none .relative">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
         {/* Business Hours & Social Icons */}
         <div>
