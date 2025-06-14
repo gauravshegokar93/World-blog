@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import articals from "./data/articals.json";
+import articals from "../data/articals.json";
 
 
 function ArticalPost(){

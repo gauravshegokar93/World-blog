@@ -3,6 +3,10 @@ import { Routes, Route } from "react-router-dom";
 
 import Navbar from "../components/nav.jsx";
 import Footer from "../components/footer.jsx";
+import HomePage from "../components/HomePage.jsx";
+import ContactPage from "../components/ContactPage.jsx";
+import About from "../components/About.jsx";
+import ArticalPost from "../components/ArticalPost.jsx";
 import HomePage from "../HomePage.jsx";
 import ContactPage from "../ContactPage.jsx";
 import About from "../components/about.jsx";
@@ -10,7 +14,7 @@ import ArticalPost from "../ArticalPost.jsx";
 import contactData from "../data/testingContactPageData.json";  
 
 
-import PrivacyPolicy from "../components/information/PrivacyPolicy";
+import PrivacyPolicy from "../components/information/PrivacyPolicy.jsx";
 import TermsConditions from "../components/information/TermsConditions";
 import Location from "../components/information/Location";
 import FAQ from "../components/information/FAQ";
