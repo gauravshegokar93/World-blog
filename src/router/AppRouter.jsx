@@ -7,7 +7,7 @@ import HomePage from "../components/HomePage.jsx";
 import ContactPage from "../components/ContactPage.jsx";
 import About from "../components/About.jsx";
 import ArticalPost from "../components/ArticalPost.jsx";
-import contactData from "../data/testingContactPageData.json";  
+import contactData from "../data/testingContactPageData.json";
 
 
 import PrivacyPolicy from "../components/information/PrivacyPolicy.jsx";
