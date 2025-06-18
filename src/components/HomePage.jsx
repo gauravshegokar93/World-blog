@@ -1,4 +1,4 @@
-import articals from "../data/articals.json";
+import articals from "../data/articals";
 import postData from "../data/testingPostInfo.json";
 import { FaSearch } from "react-icons/fa";
 import { useState, useEffect } from "react";

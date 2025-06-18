@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import articals from "../data/articals.json";
+import articals from "../data/articals";
 
 function ContributionForm() {
     const [totalParagraphs, setTotalParagraphs] = useState(1);
