@@ -31,13 +31,13 @@ export default function Navbar() {
           </h1>
         </div>
 
-        {/* Contribute Button */}
-        <button
-          type="button"
+        {/* Contribute Button, implemented using Link*/}
+        <Link
           className="bg-orange-500 hover:bg-orange-600 text-black font-semibold py-2 px-5 rounded-full transition duration-300"
+          to='/contribute'
         >
           Contribute
-        </button>
+        </Link>
       </div>
 
       {/* Navbar with menu + search */}

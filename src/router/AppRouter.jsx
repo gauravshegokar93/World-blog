@@ -16,6 +16,7 @@ import Location from "../components/information/Location";
 import FAQ from "../components/information/FAQ";
 import Advertise from "../components/Advertise.jsx";
 import Subscription from "../components/Subscription.jsx";
+import ContributionForm from "../components/Contribute.jsx";
 
 
 
@@ -43,6 +44,7 @@ export default function AppRouter() {
       <Route path="/advertise" element={<><Navbar /><Advertise /><Footer /></>} />
       <Route path="/about" element={<><Navbar /><About /><Footer /></>} />
       <Route path="/subscription" element={<><Navbar /><Subscription /><Footer /></>} />
+      <Route path="/contribute" element={<><Navbar /><ContributionForm /><Footer /></>} />
       
       
     </Routes>
