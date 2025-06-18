@@ -216,7 +216,7 @@ function SideBar() {
     <div className="w-[349px] flex flex-col gap-y-6">
       <SearchBox />
       <PostList />
-      <FinancialNews />
+      {/* <FinancialNews /> */}
       <Categories />
       <QuoteCard />
     </div>
