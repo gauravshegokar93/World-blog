@@ -103,10 +103,5 @@ function ContributionForm() {
     );
 }
 
-function underWorking(){
-    return(
-        <dev></dev>
-    )
-}
 
 export default ContributionForm;

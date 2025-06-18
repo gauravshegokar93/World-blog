@@ -12,10 +12,10 @@ import contactData from "../data/testingContactPageData.json";
 
 import PrivacyPolicy from "../components/information/PrivacyPolicy.jsx";
 import TermsConditions from "../components/information/TermsConditions";
-import Location from "../components/information/Location";
+import Location from "../components/information/location";
 import FAQ from "../components/information/FAQ";
-import Advertise from "../components/Advertise.jsx";
-import Subscription from "../components/Subscription.jsx";
+import Advertise from "../components/advertise.jsx";
+import Subscription from "../components/subscription.jsx";
 import ContributionForm from "../components/Contribute.jsx";
 
 

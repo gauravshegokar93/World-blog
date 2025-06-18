@@ -1,4 +1,4 @@
-export default function Advertise() {
+export default function advertise() {
   return (
     <div className="max-w-3xl mx-auto">
       <h1 className="text-4xl font-bold mb-6">Advertise With Us</h1>
