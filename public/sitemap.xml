@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://world-blog-2nux.vercel.app/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://world-blog-2nux.vercel.app/about</loc>
+  </url>
+
+  <url>
+    <loc>https://world-blog-2nux.vercel.app/articalpost</loc>
+  </url>
+
+  <url>
+    <loc>https://world-blog-2nux.vercel.app/contact</loc>
+  </url>
+
+  <url>
+    <loc>https://world-blog-2nux.vercel.app/advertise</loc>
+  </url>
+
+  <url>
+    <loc>https://world-blog-2nux.vercel.app/helpcenter</loc>
+  </url>
+
+  <url>
+    <loc>https://world-blog-2nux.vercel.app/faq</loc>
+  </url>
+
+  <url>
+    <loc>https://world-blog-2nux.vercel.app/location</loc>
+  </url>
+
+  <url>
+    <loc>https://world-blog-2nux.vercel.app/terms</loc>
+  </url>
+
+  <url>
+    <loc>https://world-blog-2nux.vercel.app/privacy</loc>
+  </url>
+
+  <url>
+    <loc>https://world-blog-2nux.vercel.app/subscription</loc>
+  </url>
+
+</urlset>
