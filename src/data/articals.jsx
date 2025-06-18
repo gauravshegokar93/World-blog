@@ -1,4 +1,4 @@
-[
+export default [
     {
   "id": "The_Rise_of_Minimalist_Workspaces_in_Tech",
   "HeadLine": "The Rise of Minimalist Workspaces in Tech",
