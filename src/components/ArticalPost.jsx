@@ -50,9 +50,10 @@ function ArticalPost(){
                 </div>
 
                 <div id="articalBody" className="mb-[20px]">
-                    {articalData.paragraphs.map((para) => (
+                    {articalData.paragraphs.map((para, index) => (
                         <p
                             className="text-xl pb-[30px]"
+                            key={index}
                         >
                             {para}
                         </p>
@@ -66,9 +67,10 @@ function ArticalPost(){
                     {/* <div
                         className="text-xl text-gray-600 italic font-bold"
                     >Tags :</div> */}
-                    {articalData.tags.map((para) => (
+                    {articalData.tags.map((para, index) => (
                         <div
                             className="bg-gray-200 rounded-2xl text-center px-2 py-1 font-bold"
+                            key={index}
                         >
                             {para}
                         </div>
