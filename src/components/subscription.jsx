@@ -6,7 +6,7 @@ export default function Subscription() {
         Unlock exclusive content, early access, and more. Choose a plan that fits you:
       </p>
       <ul className="mt-4 space-y-4">
-        <li>💡 Free Plan - Access to all public posts</li>
+        <li>💡 Free Plan - Access to all public posts with News</li>
         <li>🚀 Pro Plan - ₹299/month - Exclusive content + No Ads</li>
         <li>🏆 Lifetime - ₹1999 one-time - Everything included, forever!</li>
       </ul>
